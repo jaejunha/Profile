@@ -66,14 +66,13 @@ public class Frame extends JFrame {
 						case 480:
 							dscColor =  new logic.Color(0,0,0);
 							break;
-						default:
-							dscColor =  new logic.Color(255,0,0);
-							break;
 						}
 					}
 					if(time % 500 == 0){
 						time = 0;
+						cTime = 0;
 						srcPoints = dscPoints;
+						dscColor =  new logic.Color(255,0,0);
 						dscPoints = random.makePoints(Size.numberPoint, Size.screenWidth, Size.screenHeight, Size.minRadius, Size.maxRadius, Size.maxOpacity);
 					}
 					panel.repaint();
