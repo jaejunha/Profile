@@ -43,7 +43,8 @@ public class Panel extends JPanel{
 			g2d.setColor(new Color(0, 0, 0, opacity));
 			g2d.fillOval(x, y, radius, radius);
 		}
-	
+		g2d.drawImage(winTool.getImage(".\\image\\D.png"), 0, 0, this);
+		
 		setOpaque(false);
 		super.paintComponent(g);
 	}
