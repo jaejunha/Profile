@@ -30,7 +30,7 @@ public class Frame extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setContentPane(panel);
 		setSize(Size.screenWidth,Size.screenWidth);
-		setLocationRelativeTo(null); // move application to center position
+	//	setLocationRelativeTo(null); // move application to center position
 		setVisible(true);
 		
 		new Thread(){

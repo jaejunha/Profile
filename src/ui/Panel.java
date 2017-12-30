@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import javax.swing.JPanel;
 
 import logic.Point;
-import logic.Random;
 import logic.Size;
 
 public class Panel extends JPanel{
