@@ -37,7 +37,7 @@ public class Panel extends JPanel{
 
 		Graphics2D g2d = (Graphics2D) g;
 		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-	//	g2d.drawImage(winTool.getImage(".\\image\\gradation.png"), 0, 0, this);
+		g2d.drawImage(winTool.getImage(".\\image\\background.jpg"), 0, 0, this);
 		int x, y, radius, opacity;
 		int red, green, blue;
 		for(int i=0;i<Size.numberPoint;i++){
@@ -54,7 +54,8 @@ public class Panel extends JPanel{
 				green = (int)(((20-cTime)/20.0)*srcColor.getGreen()+((cTime)/20.0)*dscColor.getGreen());
 				blue = (int)(((20-cTime)/20.0)*srcColor.getBlue()+((cTime)/20.0)*dscColor.getBlue());
 			}
-			g2d.setColor(new Color(red, green, blue, opacity));
+			g2d.setColor(new Color(255, 255, 255, opacity));
+			//g2d.setColor(new Color(red, green, blue, opacity));
 			g2d.fillOval(x, y, radius, radius);
 		}
 		g2d.drawImage(winTool.getImage(".\\image\\D.png"), 0, 0, this);
